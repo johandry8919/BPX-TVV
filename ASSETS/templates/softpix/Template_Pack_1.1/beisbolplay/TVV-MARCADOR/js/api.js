@@ -194,7 +194,7 @@ function runTemplateUpdate() {
     
                    
     
-    
+
     
                             const colorDeBase = "rgb(255, 255, 255)";
 
@@ -205,6 +205,8 @@ function runTemplateUpdate() {
                             actualizarColor(Hombre_primera, hombre_primera);
                             actualizarColor(Hombre_segunda, hombre_segunda);
                             actualizarColor(Hombre_tercera, hombre_tercera);
+
+                  
                        
                     carreras_homeclub  ? carreras_homeclub  :carreras_homeclub=  '00' 
                     carreras_visitante ? carreras_visitante  : carreras_visitante=  '00'
