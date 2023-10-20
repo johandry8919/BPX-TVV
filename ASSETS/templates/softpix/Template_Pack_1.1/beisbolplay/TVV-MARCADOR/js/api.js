@@ -179,15 +179,30 @@ function runTemplateUpdate() {
     
     
                         let totalS = 0;
-                        let totalB = 0;
-    
+                            let totalB = 0;
+                            let totalF = 0;
+                        
                         for (let i = 0; i < secuencia_lanzamientos.length; i++) {
                             if (secuencia_lanzamientos[i] === 'S') {
                                 totalS++;
                             } else if (secuencia_lanzamientos[i] === 'B') {
                                 totalB++;
+                            } else if (secuencia_lanzamientos[i] === 'F') {
+                                totalF++;
                             }
                         }
+                        
+                        if (totalF === 1 && totalS === 2) {
+                            totalS = 0;
+                            totalB = 0;
+                        } else if (totalF === 2 && totalS === 1) {
+                            totalS = 0;
+                            totalB = 0;
+                        } else if (totalF === 3 || totalS === 3 || totalB === 4) {
+                            totalS = 0;
+                            totalB = 0;
+                        }
+    
     
                        
                             strikes.innerText = `${totalB}   -   ${totalS}`;

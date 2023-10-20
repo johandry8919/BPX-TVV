@@ -25,9 +25,6 @@ const url2 = new URL("https://bss.qualitybeisbol.com/api/diario-estadio-era");
 
 function runTemplateUpdate() {
 
-
-  
-
     function ajustarCadena(cadena) {
         cadena = cadena.replace(/\+/g, ' ');
         cadena = cadena.replace(/\+/g, ' ');
@@ -53,7 +50,6 @@ function runTemplateUpdate() {
         "Content-Type": "application/json",
         "Accept": "application/json",
     };
-    
     
     const request1 = fetch(url1, {
         method: "GET",
@@ -103,19 +99,15 @@ function runTemplateUpdate() {
                         } = result1.data.juego;
 
 
-                       
-
-
-            
                         let homeclub_lanzadores = result1.data.boxscore.homeclub.lanzadores;
                         let homeclub_peloteros =result1.data.boxscore.homeclub.peloteros;
                         let peloteros_visitante = result1.data.boxscore.visitante.peloteros;
                         let lanzadores_visitante = result1.data.boxscore.visitante.lanzadores;
     
     
-                        
-    
                         if (parte === 0) {
+                            triangle.classList.add("up")
+                            triangle.classList.remove("down")
                             const totalStrikesBolasFoul = lanzador_homeclub_strikes + lanzador_homeclub_bolas + lanzador_homeclub_foul;
                             numeroLanzamiento.innerText =   "L: " + totalStrikesBolasFoul;
                             
@@ -126,7 +118,6 @@ function runTemplateUpdate() {
                                    let apellido = element.apellido;
                                    const inicial = nombre.charAt(0);
                                    document.getElementById("f1_gfx").innerText = inicial + "." + " " + apellido;
-                                  
                                 }
                     
                                });
@@ -147,6 +138,8 @@ function runTemplateUpdate() {
                           });
                          
                         } if (parte === 1){
+                              triangle.classList.add("down")
+                            triangle.classList.remove("up")
                               //data / boxscore / homeclub /lanzador 
                               homeclub_peloteros.forEach(element => {
                                 if(element.id_pelotero == id_bateador_homeclub){
@@ -156,7 +149,6 @@ function runTemplateUpdate() {
                                    document.getElementById("f0_gfx").innerText = inicia + "." + " " + apellido;
                                    element.AVE == null ?  element.AVE = '0.00' : element.AVE
                                     Ave.innerText = element.AVE;
-                                  
                                 }
                     
                                });
@@ -170,32 +162,39 @@ function runTemplateUpdate() {
                                    document.getElementById("f1_gfx").innerText = inicia + "." + " " + apellido;
                                    const totalStrikesBolasFoul = lanzador_visitante_bolas + lanzador_visitante_foul + lanzador_visitante_strikes;
                                     numeroLanzamiento.innerText =   "L: " + totalStrikesBolasFoul;
-                                  
-       
                                }
                           });
     
                         }
-    
-    
-                        let totalS = 0;
-                        let totalB = 0;
-    
+
+
+                            let totalS = 0;
+                            let totalB = 0;
+                            let totalF = 0;
+                        
                         for (let i = 0; i < secuencia_lanzamientos.length; i++) {
                             if (secuencia_lanzamientos[i] === 'S') {
                                 totalS++;
                             } else if (secuencia_lanzamientos[i] === 'B') {
                                 totalB++;
+                            } else if (secuencia_lanzamientos[i] === 'F') {
+                                totalF++;
                             }
+                        }
+                        
+                        if (totalF === 1 && totalS === 2) {
+                            totalS = 0;
+                            totalB = 0;
+                        } else if (totalF === 2 && totalS === 1) {
+                            totalS = 0;
+                            totalB = 0;
+                        } else if (totalF === 3 || totalS === 3 || totalB === 4) {
+                            totalS = 0;
+                            totalB = 0;
                         }
     
                        
                             strikes.innerText = `${totalB}   -   ${totalS}`;
-    
-                   
-    
-    
-    
                             const colorDeBase = "rgb(255, 255, 255)";
 
                             function actualizarColor(elemento, valor) {
@@ -205,18 +204,18 @@ function runTemplateUpdate() {
                             actualizarColor(Hombre_primera, hombre_primera);
                             actualizarColor(Hombre_segunda, hombre_segunda);
                             actualizarColor(Hombre_tercera, hombre_tercera);
-                       
-                    carreras_homeclub  ? carreras_homeclub  :carreras_homeclub=  '00' 
-                    carreras_visitante ? carreras_visitante  : carreras_visitante=  '00'
-    
-                     Carreras_homeclub.innerText = carreras_homeclub;
-                     Carreras_visitante.innerText = carreras_visitante;
-                     Id_equipo_homeclub.src = array_logo[id_equipo_homeclub].img_url;
-                     Id_equipo_visitante.src = array_logo[id_equipo_visitante].img_url;
-                     
-                     inning ? inning : inning = "0";
-                     Inning.innerText = inning;
-                     parte == 1 ? triangle.classList.add("down") : triangle.classList.add("up");
+                            
+                            carreras_homeclub  ? carreras_homeclub  :carreras_homeclub=  '00' 
+                            carreras_visitante ? carreras_visitante  : carreras_visitante=  '00'
+            
+                            Carreras_homeclub.innerText = carreras_homeclub;
+                            Carreras_visitante.innerText = carreras_visitante;
+                            Id_equipo_homeclub.src = array_logo[id_equipo_homeclub].img_url;
+                            Id_equipo_visitante.src = array_logo[id_equipo_visitante].img_url;
+                            
+                            inning ? inning : inning = "0";
+                            Inning.innerText = inning;
+               
     
                    
                      if (outs === 1) {
@@ -244,8 +243,7 @@ function runTemplateUpdate() {
     
         
         fetchData();
-    
-      
+
         const updateInterval = 10000; // 10 segundos
         setInterval(fetchData, updateInterval);
     }

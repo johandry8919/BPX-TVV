@@ -75,14 +75,12 @@ Promise.all([request1 ,request2])
                  } = result1.data.juego;
 
                  var jugadores ;
-                 var id_equipos ;
+                 var id_equipos  ;
 
                  parte == 1 ? jugadores = result2.data.homeclub.peloteros: jugadores = result2.data.visitante.peloteros
                  parte == 1 ?  id_equipos = id_equipo_homeclub: id_equipos = id_equipo_visitante
 
-                
-
-                 posicion_poscampo =['BD' ,'P' , ' C' , '1B', '2B' , '3B' ,' SS' , 'LF' ,'CF' , 'RF']
+                 posicion_poscampo =['BD' ,'BD' , ' C' , '1B', '2B' , '3B' ,' SS' , 'LF' ,'CF' , 'RF']
 
                  const contenedores = document.getElementById('cont');
 
@@ -169,11 +167,6 @@ Promise.all([request1 ,request2])
                  
                  // Llama a la función para iniciar el proceso
                  fetchDataAndCreateElements();
-
-          
-            
-
-    
    
  }
  else {console.error("Error fetching data:", response.statusText);}})
