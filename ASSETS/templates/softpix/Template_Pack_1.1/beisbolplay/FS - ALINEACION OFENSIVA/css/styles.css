@@ -74,6 +74,8 @@ video {
     font-size: 30px;
     padding-bottom: 20px;
     opacity: 0;
+    text-wrap: nowrap;
+    overflow: hidden;
    
    
 }
