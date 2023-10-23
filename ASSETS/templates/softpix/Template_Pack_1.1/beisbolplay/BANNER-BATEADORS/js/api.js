@@ -129,8 +129,7 @@ function runTemplateUpdate() {
           data_pelotero = result1.data.boxscore.visitante.peloteros
 
           data_pelotero.forEach(element => {
-             
-                
+            
             if(element.id_pelotero == id_bateador_visitante){
               let resultado = parseInt(element.HIT) + parseInt(element.H2) + parseInt(element.H3);
 

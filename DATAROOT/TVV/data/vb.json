@@ -1,7 +1,7 @@
 {
   "warning": "Modifications done in the SPX will overwrite this file.",
   "copyright": "(c) 2020-2023 Softpix (https://spx.graphics)",
-  "updated": "2023-10-23T14:36:02.939Z",
+  "updated": "2023-10-23T21:20:30.135Z",
   "templates": [
     {
       "description": "bx-score left",
@@ -268,6 +268,34 @@
       "imported": "1697932631818",
       "relpath": "/softpix/Template_Pack_1.1/beisbolplay/BANNER-BATEADORS/BANNER-BATEADOR-FULL.html",
       "itemID": "1697932727611"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "BATEADOR-FULL",
+          "value": "BATEADOR-FULL"
+        },
+        {
+          "field": "f0",
+          "ftype": "textfield",
+          "title": "ID DEL JUEGO",
+          "value": "23+7+4++1"
+        }
+      ],
+      "onair": "false",
+      "imported": "1697932631818",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/BANNER-BATEADORS/BANNER-BATEADOR-FULL.html",
+      "itemID": "1698095788489"
     }
   ]
 }
