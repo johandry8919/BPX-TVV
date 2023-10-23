@@ -74,8 +74,8 @@ function runTemplateUpdate() {
         id_equipo_visitante,
         } = result1.data.juego;
 
-        id_equipo_homeclub == 4 ? Nombre.style.color = '#00011F': '';
-        id_bateador_visitante == 4 ? Nombre.style.color = '#00011F': '';
+        id_equipo_homeclub == 4 ? Nombre.style.color = '#00011F': '#fff';
+        id_bateador_visitante == 4 ? Nombre.style.color = '#00011F': '#fff';
 
         
         let id_jugador;
@@ -116,7 +116,7 @@ function runTemplateUpdate() {
                const inicial_N = element.nombre.charAt(0);
                 const inicial_P= element.apellido.charAt(0);
 
-              Nombre.innerText = `${element.nombre} ${element.apellido}     ${inicial_N}${inicial_P}`;
+              Nombre.innerText = `${element.nombre} ${element.apellido} `;
           
             }
         });
@@ -156,7 +156,7 @@ function runTemplateUpdate() {
                const inicial_N = element.nombre.charAt(0);
                 const inicial_P= element.apellido.charAt(0);
 
-              Nombre.innerText = `${element.nombre} ${element.apellido}     ${inicial_N}${inicial_P}`;
+              Nombre.innerText = `${element.nombre} ${element.apellido}`;
 
 
               

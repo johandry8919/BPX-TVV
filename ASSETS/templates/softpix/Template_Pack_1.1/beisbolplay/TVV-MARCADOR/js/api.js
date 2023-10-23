@@ -102,10 +102,6 @@ function runTemplateUpdate() {
                             lanzador_visitante_strikes
                         } = result1.data.juego;
 
-
-                       
-
-
             
                         let homeclub_lanzadores = result1.data.boxscore.homeclub.lanzadores;
                         let homeclub_peloteros =result1.data.boxscore.homeclub.peloteros;
@@ -228,7 +224,7 @@ function runTemplateUpdate() {
     
                      Carreras_homeclub.innerText = carreras_homeclub;
                      Carreras_visitante.innerText = carreras_visitante;
-                     Id_equipo_homeclub.src = array_logo[id_equipo_homeclub].img_url;
+                     Id_equipo_homeclub.src = array_logo[id_equipo_homeclub=1].img_url;
                      Id_equipo_visitante.src = array_logo[id_equipo_visitante].img_url;
                      
                      inning ? inning : inning = "0";

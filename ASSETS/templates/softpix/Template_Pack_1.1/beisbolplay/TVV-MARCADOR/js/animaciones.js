@@ -69,7 +69,6 @@ function runAnimationIN() {
         dur,
         {
           width: 0,
-         
         },
         {
           width: function (i, target) {
