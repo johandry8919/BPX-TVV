@@ -98,14 +98,7 @@ function runTemplateUpdate() {
                             lanzador_visitante_strikes
                         } = result1.data.juego;
 
-                
-
-                         console.log(result1.data)
-
-
                        
-
-
                         let homeclub_lanzadores = result1.data.boxscore.homeclub.lanzadores;
                         let homeclub_peloteros =result1.data.boxscore.homeclub.peloteros;
                         let peloteros_visitante = result1.data.boxscore.visitante.peloteros;
@@ -131,10 +124,22 @@ function runTemplateUpdate() {
        
                                        //data / boxscore / visitante /visitante 
                                peloteros_visitante.forEach(element => {
+
+                                function convertirNumero(numero) {
+                                    if (numero === null || typeof numero === "undefined") {
+                                      numero =.000;
+                                    }
+                                    return numero.toString().substring(1);
+                                  }
+    
+                                 
                                if(element.id_pelotero == id_bateador_visitante){
                                    let nombres = element.nombre;
-                                   element.AVE == null ?  element.AVE = '0.00' : element.AVE
-                                   Ave.innerText = element.AVE;
+
+                                   element.AVE == null ? 0.000 :element.AVE
+                                   let AVE = convertirNumero(element.AVE)
+
+                                   Ave.innerText = AVE;
 
                                    let apellidos = element.apellido;
                                    const inicia = nombres.charAt(0);
@@ -154,8 +159,22 @@ function runTemplateUpdate() {
                                    let apellido = element.apellido;
                                    const inicia = nombre.charAt(0);
                                    document.getElementById("f0_gfx").innerText = inicia + "." + " " + apellido;
-                                   element.AVE == null ?  element.AVE = '0.00' : element.AVE
-                                    Ave.innerText = element.AVE;
+
+
+                                   function convertirNumero(numero) {
+                                    if (numero === null || typeof numero === "undefined") {
+                                      numero =.000;
+                                    }
+                                    return numero.toString().substring(1);
+                                  }
+
+                                  element.AVE == null ? 0.000 :element.AVE
+                                  let AVE = convertirNumero(element.AVE)
+
+                                  Ave.innerText = AVE;
+
+
+                                   
                                 }
                     
                                });
