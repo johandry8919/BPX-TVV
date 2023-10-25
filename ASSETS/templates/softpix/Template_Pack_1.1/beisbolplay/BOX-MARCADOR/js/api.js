@@ -276,3 +276,12 @@ function runTemplateUpdate() {
     
     updateGameData();
 }
+
+
+
+
+
+
+
+
+
