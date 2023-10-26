@@ -180,6 +180,9 @@ function getDataB() {
                       logos_equipos.src = Logos_equipos[id_equipo_jugado].img_url;
                       fondo_equipos.src = Fondo_equipos[id_equipo_jugado].img_url;
                       let data_pelotero = result1.data.boxscore.homeclub.peloteros
+
+
+                      console.log(data_pelotero)
                       data_pelotero.forEach(element => {
                          
                         if(element.id_pelotero == id_peloteros){
