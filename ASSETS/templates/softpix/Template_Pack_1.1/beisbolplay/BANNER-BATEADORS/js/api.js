@@ -103,6 +103,9 @@ function getDataB() {
                        
                 
                     } 
+                    if(e('primer_turno')){
+                      e('primer_turno').innerHTML = htmlDecode(e('f4').innerText)
+                    }
             
                  }
             
@@ -158,39 +161,45 @@ function getDataB() {
             
                     datas.data.forEach((element, index) => {
                       if(index == 0){
+                        function convertirNumero(numero) {
+                          if (numero === null || typeof numero === "undefined") {
+                            numero =.000;
+                          }
+                          return numero.toString().substring(1);
+                        }
+
+                       let AVE = convertirNumero(element.AVE)
+                       let HR = convertirNumero(element.HR)
+                       let CI = convertirNumero(element.CI)
+                       let OPS = convertirNumero(element.OPS)
+
                         if(document.getElementById('fxg')){
                           document.getElementById('fxg').innerHTML = ` 
                      <div>
-                       ${element.AVE == null?'0':element.AVE} <span> AVE </span> / </div>
+                       ${AVE} <span> AVE </span> / </div>
                       <div> ${element.HR== null?'0' :element.HR} <span > HR </span>  / </div>
                         <div>${element.CI== null?'0':element.CI} <span>CI </span>  / </div> 
-                         <div> ${element.OPS== null?'0':element.OPS} <span> OPS</span> </div>`;
+                         <div> ${OPS} <span> OPS</span> </div>`;
                 
                        }
                       }
                     })
-            
-                  });
-            
-                    
-                    let id_jugador;
+
+                      let id_jugador;
 
                     if(parte == 1){
                       id_jugador = result1.data.juego.id_bateador_homeclub
                       logos_equipos.src = Logos_equipos[id_equipo_jugado].img_url;
                       fondo_equipos.src = Fondo_equipos[id_equipo_jugado].img_url;
                       let data_pelotero = result1.data.boxscore.homeclub.peloteros
-
-
-                      console.log(data_pelotero)
                       data_pelotero.forEach(element => {
                          
                         if(element.id_pelotero == id_peloteros){
                           let resultado = parseInt(element.HIT) + parseInt(element.H2) + parseInt(element.H3);
             
-                          if(e('primer_turno')){
-                            e('primer_turno').innerHTML = htmlDecode(e('f4').innerText)
-                          }else if(document.getElementById('fxt')){
+                      
+                          
+                          if(document.getElementById('fxt')){
                             document.getElementById('fxt').innerText = `HOY: ${element.VB} - ${resultado}  / ${element.HR} HR / ${element.HIT} H / ${element.SO} K / ${element.CI} CI`;
                            
                           }
@@ -209,9 +218,7 @@ function getDataB() {
                         if(element.id_pelotero == id_peloteros){
                           let resultado = parseInt(element.HIT) + parseInt(element.H2) + parseInt(element.H3);
             
-                          if(e('primer_turno')){
-                            e('primer_turno').innerHTML = htmlDecode(e('f4').innerText)
-                          }else if(document.getElementById('fxt')){
+                           if(document.getElementById('fxt')){
                             document.getElementById('fxt').innerText = `HOY: ${element.VB} - ${resultado}  / ${element.HR} HR / ${element.HIT} H / ${element.SO} K / ${element.CI} CI`;
                         
                            
@@ -222,8 +229,13 @@ function getDataB() {
                       });
                       
                     }
+               runAnimationIN();
+                  });
             
-                     runAnimationIN();
+                    
+                  
+            
+                  
             
                 })
                 .catch(error => {

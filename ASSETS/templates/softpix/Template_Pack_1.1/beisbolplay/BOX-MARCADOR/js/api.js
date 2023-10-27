@@ -19,16 +19,6 @@ const outs2 = document.getElementById("outs2");
 const Ave = document.getElementById("ave");
 const numeroLanzamiento = document.getElementById("numeroLanzamiento");
 
-var xhr = new XMLHttpRequest();
-xhr.open('GET', 'data_json.json', true);
-xhr.onreadystatechange = function() {
-  if (xhr.readyState === 4 && xhr.status === 200) {
-    var data = JSON.parse(xhr.responseText);
-   
-    console.log(data);
-  }
-};
-xhr.send();
 
 
 const url1 = new URL("https://bss.qualitybeisbol.com/api/boxscore");
