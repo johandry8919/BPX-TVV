@@ -87,89 +87,110 @@ Promise.all([request1 ,request2])
 
                  const contenedores = document.getElementById('cont');
 
-                 function fetchDataAndCreateElements() {
-                     let currentIndex = 0;
-                 
-                     function processNextPlayer() {
-                         if (currentIndex < jugadores.length) {
+                 function compararPorPosicionBateo(a, b) {
+                    return   a.posicion_bateo - b.posicion_bateo;
+                  }
+                  
+                  // Ordenar el arreglo de jugadores
+                 let resul =  jugadores.sort(compararPorPosicionBateo);
+                  
+                  resul.forEach(element => { 
+                    
+                
+                
+                    
+                       let div = document.createElement("div");
 
-                          console.log(currentIndex)
-                             const element = jugadores[currentIndex];
-                             const url = new URL("https://bss.qualitybeisbol.com/api/anual-pelotero-ave");
-                 
-                             const params = {
-                                 id_bateador: element.id_jugador,
-                                 periodo: "TR",
-                                 temporada: "2023",
-                             };
-                 
-                             for (const key in params) {
-                                 url.searchParams.append(key, params[key]);
-                             }
-                 
-                             fetch(url, {
-                                 method: "GET",
-                                 headers,
-                             })
-                                 .then((response) => response.json())
-                                 .then((data) => {
+                         if(element.posicion_bateo){
 
-                                  data.data[0].AVE == null ? data.data[0].AVE = '0.000': data.data[0].AVE
-                                     let div = document.createElement("div");
-                                     div.innerHTML = `
-                                         <div class="info info${currentIndex}">
-                                             <div class="a">${element.mano_bateo}</div>
-                                             <div id="info${currentIndex}_B" class="b">${element.nombre} ${element.apellido}</div>
-                                             <div id="info${currentIndex}_C" class="c">${posicion_poscampo[element.posicion_campo]}</div>
-                                             <div id="info${currentIndex}_E" class="e">${data.data[0].AVE}</div>
-                                         </div>
-                                     `;
+                            const url = new URL("https://bss.qualitybeisbol.com/api/anual-pelotero-ave");
+                   
+                            const params = {
+                                id_bateador: element.id_jugador,
+                                periodo: "TR",
+                                temporada: "2023",
+                            };
+                
+                            for (const key in params) {
+                                url.searchParams.append(key, params[key]);
+                            }
+                
+                            fetch(url, {
+                                method: "GET",
+                                headers,
+                            })
+                                .then((response) => response.json())
+                                .then((data) => {
 
-                                     if(currentIndex >= 8 ){
-                                        const videoElement = document.getElementById("video");
+                                    function convertirNumero(numero) {
+                                        if (numero === null || typeof numero === "undefined") {
+                                          numero =.000;
+                                        }
+                                        return numero.toString().substring(1);
+                                      }
+                                      let AVE = convertirNumero(data.data[0].AVE)
 
-                                        // Crea y configura el elemento source una sola vez
-                                        const sourceElement = document.createElement("source");
-                                        sourceElement.src = Logos_equipos[id_equipos].img_url;
-                                        sourceElement.type = "video/webm";
-                                        // Agrega el elemento source al video y carga el video
-                                        videoElement.appendChild(sourceElement);
+                                  
+
+                                   if(data.data[0].id_pelotero === element.id_jugador){
+
+                                    div.innerHTML = `
+                                    <div class="info info${element.posicion_bateo}">
+                                        <div class="a">${element.mano_bateo}</div>
+                                        <div id="info${element.posicion_bateo}_B" class="b">${element.nombre} ${element.apellido}</div>
+                                        <div id="info${element.posicion_bateo}_C" class="c">${posicion_poscampo[element.posicion_campo]}</div>
+                                        <div id="info${element.posicion_bateo}_E" class="e">${AVE}</div>
+                                    </div>
+                                `;
+                                   }
+                                    
+                                })
+                                .catch((error) => {
+                                    console.error("Error:", error);
+                                   
+                                });
 
 
+            
 
-                                        const video = document.getElementById('video');
-                                        const zoomableDivs = document.querySelector('.logo');
-
-                                    video.addEventListener('play', () => {
-                                              
-                                      zoomableDivs.classList.add('zoomed');
-                                    });
-
-                                      runAnimationIN();
-
-                                     }
-                 
-                                     contenedores.appendChild(div);
-                                     currentIndex++;
-                                     processNextPlayer(); 
-                                     
-                                 })
-                                 .catch((error) => {
-                                     console.error("Error:", error);
-                                     currentIndex++;
-                                     processNextPlayer(); 
-                                 });
+                         contenedores.appendChild(div);
                          }
 
+                  
+                        
+                            
+
+                         if(element.posicion_bateo === 9 ){
+
+                            console.log(element.posicion_bateo)
+                            const videoElement = document.getElementById("video");
+
+                            // Crea y configura el elemento source una sola vez
+                            const sourceElement = document.createElement("source");
+                            sourceElement.src = Logos_equipos[id_equipos].img_url;
+                            sourceElement.type = "video/webm";
+                            // Agrega el elemento source al video y carga el video
+                            videoElement.appendChild(sourceElement);
+
+
+
+                            const video = document.getElementById('video');
+                            const zoomableDivs = document.querySelector('.logo');
+
+                        video.addEventListener('play', () => {
+                                  
+                          zoomableDivs.classList.add('zoomed');
+                        });
+                        
+                        runAnimationIN();
                          
-                     }
-                     
-                     processNextPlayer();
+                         }
+         
                    
-                 }
-                 
-                 // Llama a la función para iniciar el proceso
-                 fetchDataAndCreateElements();
+    
+                });
+            
+
    
  }
  else {console.error("Error fetching data:", response.statusText);}})

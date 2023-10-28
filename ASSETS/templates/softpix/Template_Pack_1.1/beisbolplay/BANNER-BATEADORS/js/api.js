@@ -195,10 +195,7 @@ function getDataB() {
                       data_pelotero.forEach(element => {
                          
                         if(element.id_pelotero == id_peloteros){
-                          let resultado = parseInt(element.HIT) + parseInt(element.H2) + parseInt(element.H3);
-            
-                      
-                          
+                          let resultado = parseInt(element.HIT) ;
                           if(document.getElementById('fxt')){
                             document.getElementById('fxt').innerText = `HOY: ${element.VB} - ${resultado}  / ${element.HR} HR / ${element.HIT} H / ${element.SO} K / ${element.CI} CI`;
                            
@@ -216,7 +213,7 @@ function getDataB() {
             
                       data_pelotero.forEach(element => {
                         if(element.id_pelotero == id_peloteros){
-                          let resultado = parseInt(element.HIT) + parseInt(element.H2) + parseInt(element.H3);
+                          let resultado = parseInt(element.HIT) ;
             
                            if(document.getElementById('fxt')){
                             document.getElementById('fxt').innerText = `HOY: ${element.VB} - ${resultado}  / ${element.HR} HR / ${element.HIT} H / ${element.SO} K / ${element.CI} CI`;

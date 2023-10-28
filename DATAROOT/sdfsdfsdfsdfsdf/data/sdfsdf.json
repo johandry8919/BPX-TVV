@@ -1,0 +1,249 @@
+{
+  "warning": "Modifications done in the SPX will overwrite this file.",
+  "copyright": "(c) 2020-2023 Softpix (https://spx.graphics)",
+  "updated": "2023-10-28T00:38:05.300Z",
+  "templates": [
+    {
+      "description": "bx-score left",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "5",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "7",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "bg-box-marcadores",
+          "value": "bg-box-marcadores"
+        },
+        {
+          "field": "f0",
+          "ftype": "textfield",
+          "title": "ID DEL JUEGO",
+          "value": "23+2+4++3"
+        },
+        {
+          "field": "f6",
+          "ftype": "checkbox",
+          "title": "ACTIVAR CAMPO NOMBRE",
+          "value": "0"
+        }
+      ],
+      "onair": "false",
+      "imported": "1698443257533",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/TVV-MARCADOR/BOX-MARCADOR.html",
+      "itemID": "1698443274989"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "ALINEACION OFENSIVA",
+          "value": "ALINEACION OFENSIVA"
+        },
+        {
+          "field": "f0",
+          "ftype": "textfield",
+          "title": "ID DEL JUEGO",
+          "value": "23+1+2+20"
+        },
+        {
+          "field": "f1",
+          "ftype": "textfield",
+          "title": "MANAGER",
+          "value": "ALINIACION OFENCIVA"
+        },
+        {
+          "field": "f3",
+          "ftype": "filelist",
+          "title": "Elija la imagen del patrocinador",
+          "assetfolder": "/media/images/bg/",
+          "extension": "png",
+          "value": "none"
+        }
+      ],
+      "onair": "false",
+      "imported": "1698444499359",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/FS - ALINEACION OFENSIVA/ALINEACION OFENSIVA.html",
+      "itemID": "1698444506583"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "BATEADOR-FULL",
+          "value": "BATEADOR-FULL"
+        },
+        {
+          "field": "f0",
+          "ftype": "textfield",
+          "title": "ID DEL JUEGO",
+          "value": "23+1+2+20"
+        },
+        {
+          "field": "f1",
+          "ftype": "dropdown",
+          "title": "BATEADORES HOMECLUB",
+          "value": "",
+          "items": [
+            {
+              "text": "bateador-N/A",
+              "value": ""
+            },
+            {
+              "text": "bateador-1",
+              "value": "0"
+            },
+            {
+              "text": "bateador-2",
+              "value": "1"
+            },
+            {
+              "text": "bateador-3",
+              "value": "2"
+            },
+            {
+              "text": "bateador-4",
+              "value": "3"
+            },
+            {
+              "text": "bateador-5",
+              "value": "4"
+            },
+            {
+              "text": "bateador-6",
+              "value": "5"
+            },
+            {
+              "text": "bateador-7",
+              "value": "6"
+            },
+            {
+              "text": "bateador-8",
+              "value": "7"
+            },
+            {
+              "text": "bateador-9",
+              "value": "8"
+            }
+          ]
+        },
+        {
+          "field": "f2",
+          "ftype": "dropdown",
+          "title": "BATEADORES VISITANTE",
+          "value": "0",
+          "items": [
+            {
+              "text": "bateador-N/A",
+              "value": ""
+            },
+            {
+              "text": "bateador-1",
+              "value": "0"
+            },
+            {
+              "text": "bateador-2",
+              "value": "1"
+            },
+            {
+              "text": "bateador-3",
+              "value": "2"
+            },
+            {
+              "text": "bateador-4",
+              "value": "3"
+            },
+            {
+              "text": "bateador-5",
+              "value": "4"
+            },
+            {
+              "text": "bateador-6",
+              "value": "5"
+            },
+            {
+              "text": "bateador-7",
+              "value": "6"
+            },
+            {
+              "text": "bateador-8",
+              "value": "7"
+            },
+            {
+              "text": "bateador-9",
+              "value": "8"
+            }
+          ]
+        }
+      ],
+      "onair": "false",
+      "imported": "1698451064808",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/BANNER-BATEADORS/BANNER-BATEADOR-FULL.html",
+      "itemID": "1698451073979"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "BOX SCORE INNING",
+          "value": "BOX SCORE INNING"
+        },
+        {
+          "field": "f0",
+          "ftype": "textfield",
+          "title": "Texto dinamico",
+          "value": "MITAD DEL TERCERO"
+        },
+        {
+          "field": "f1",
+          "ftype": "textfield",
+          "title": "ID DEL JUEGO",
+          "value": "23+1+2+20"
+        },
+        {
+          "field": "f3",
+          "ftype": "filelist",
+          "title": "Elija la imagen del patrocinador",
+          "assetfolder": "/media/images/bg/",
+          "extension": "png",
+          "value": "/media/images/bg/MOVISTAR.png"
+        }
+      ],
+      "onair": "false",
+      "imported": "1698452649517",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/BOX-SCORE-INNING/BOX-SCORE-INNING.html",
+      "itemID": "1698452659673"
+    }
+  ]
+}
