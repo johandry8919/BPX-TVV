@@ -182,6 +182,7 @@ function getDataB() {
                          <div> ${OPS} <span> OPS</span> </div>`;
                 
                        }
+                    
                       }
                     })
 
