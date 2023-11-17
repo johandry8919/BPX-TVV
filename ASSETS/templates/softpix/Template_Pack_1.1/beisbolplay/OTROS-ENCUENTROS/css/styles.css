@@ -1,0 +1,153 @@
+
+body{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+  
+  }
+  
+
+.container{
+    width:334px;
+    height: 450px;
+    position: absolute;
+    top: 580px;
+    box-sizing: border-box;
+    right: 130px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.cont-text{
+    font-size: 30px;
+    text-align: center;
+    color: #0e0c0c;
+    background-image: url('../img/OTROS-ENCUENTROS.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50px;
+    opacity: 0;
+}
+
+.cont-1{
+
+    width:334px;
+    height: 364px;
+    position:absolute;
+    bottom: 50px;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+    background-image: url('../img/BOX.png');
+    background-repeat: no-repeat;
+    background-size:contain;
+    opacity: 0;
+   
+
+}
+
+.cont-1 .cont-inning{
+    position: absolute;
+    display: flex;
+    color: #0e0c0c;
+    width: 95px;
+    height: 95px;
+    background-image: url('../img/INNING.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2000;
+    left: 130px;
+    top: 120px;
+    font-size: 30px;
+    opacity: 0;
+}
+
+.cont-inning .conte{
+   width: 75px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+
+}
+.cont-inning .conte .inning{
+  font-size: 30px;
+  margin-left: 17px;
+
+}
+.cont-inning .conte .alta_baja{
+  margin-left: 10px;
+
+}
+
+
+
+.cont-1 .visitante{
+    width: 100%;
+    height: 155px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+
+ 
+
+}
+.cont-1 .visitante .logo_equipo{
+    width: 158px;
+    height: 170px;
+    text-align: center;
+    margin-left: 3px;
+    margin-top: 15px;
+    border: solid 1px red;
+   
+}
+.cont-1 .visitante .carreras{
+    width: 158px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 125px;
+    color: #FFF;
+    position: absolute;
+    right: 0;
+}
+
+
+
+.cont-1 .homeclub{
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0px;
+    position: relative;
+    overflow: hidden;
+
+}
+.cont-1 .homeclub .logo_equipo{
+    width: 158px;
+    height: 180px;
+    margin-top: 15px;
+    margin-left: 3px;
+}
+.cont-1 .homeclub .carreras{
+    width: 155px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 125px;
+    color: #FFF;
+    position: absolute;
+    right: 0;
+}
+

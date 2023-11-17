@@ -80,6 +80,7 @@ Promise.all([request1 ,request2])
                  var jugadores ;
                  var id_equipos  ;
 
+             
                  parte == 1 ? jugadores = result2.data.homeclub.peloteros: jugadores = result2.data.visitante.peloteros
                  parte == 1 ?  id_equipos = id_equipo_homeclub: id_equipos = id_equipo_visitante
 
@@ -93,16 +94,17 @@ Promise.all([request1 ,request2])
                   
                   // Ordenar el arreglo de jugadores
                  let resul =  jugadores.sort(compararPorPosicionBateo);
-                  
-                  resul.forEach(element => { 
+                 let number  = 0 
+
+                  resul.forEach((element , index) => { 
                     
                 
-                
+                  
                     
                        let div = document.createElement("div");
 
                          if(element.posicion_bateo){
-
+                      
                             const url = new URL("https://bss.qualitybeisbol.com/api/anual-pelotero-ave");
                    
                             const params = {
@@ -113,6 +115,8 @@ Promise.all([request1 ,request2])
                 
                             for (const key in params) {
                                 url.searchParams.append(key, params[key]);
+                                
+                               
                             }
                 
                             fetch(url, {
@@ -133,7 +137,7 @@ Promise.all([request1 ,request2])
                                   
 
                                    if(data.data[0].id_pelotero === element.id_jugador){
-
+                                    
                                     div.innerHTML = `
                                     <div class="info info${element.posicion_bateo}">
                                         <div class="a">${element.mano_bateo}</div>
@@ -151,18 +155,19 @@ Promise.all([request1 ,request2])
                                 });
 
 
-            
 
                          contenedores.appendChild(div);
                          }
 
                   
                         
-                            
+                     
 
-                         if(element.posicion_bateo === 9 ){
+                         if(index == 8 ){
 
-                            console.log(element.posicion_bateo)
+                        
+
+                          
                             const videoElement = document.getElementById("video");
 
                             // Crea y configura el elemento source una sola vez
@@ -171,23 +176,21 @@ Promise.all([request1 ,request2])
                             sourceElement.type = "video/webm";
                             // Agrega el elemento source al video y carga el video
                             videoElement.appendChild(sourceElement);
-
-
-
                             const video = document.getElementById('video');
                             const zoomableDivs = document.querySelector('.logo');
 
                         video.addEventListener('play', () => {
+                          runAnimationIN();
                                   
                           zoomableDivs.classList.add('zoomed');
                         });
                         
-                        runAnimationIN();
+                       
                          
                          }
          
                    
-    
+                        
                 });
             
 

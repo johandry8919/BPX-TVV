@@ -114,7 +114,7 @@ setTimeout(() => {
   info_button("#info_button", 2, 50);
   animateInfo(".a", 0.2, -50);
 
-}, 2000);
+}, 2500);
 
 
 }

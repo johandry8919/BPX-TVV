@@ -231,7 +231,7 @@ function runAnimationIN() {
         "#cont-logo",
         { opacity: 0 },
         {
-          delay: 2.5,
+          delay: 1.5,
           duration: dur - 0.2,
           opacity: 1,
           ease: "Power3.easeOut",
@@ -241,14 +241,14 @@ function runAnimationIN() {
       gsap.fromTo(
         "#cont-logo",
         { x: -40 },
-        { delay: 2.5, duration: dur - 0.2, x: 0, ease: "back.out(0.3)" }
+        { delay: 1.5, duration: dur - 0.2, x: 0, ease: "back.out(0.3)" }
       );
   
       gsap.fromTo(
         "#cont-logo",
         { opacity: 0 },
         {
-          delay: 2.5,
+          delay: 1.5,
           duration: dur - 0.2,
           opacity: 1,
           ease: "Power3.easeOut",

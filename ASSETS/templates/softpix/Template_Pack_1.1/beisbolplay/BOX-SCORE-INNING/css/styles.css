@@ -186,13 +186,14 @@ body{
   position: absolute;
   right: 40px;
   width: 65%;
+
  
 }
 .cont-1 .cont-logo {
   width: 370px;
   height: 194px;
   position: absolute;
-  right: 0;
+  right:378px;
   background-image: url("../img/logo_panna.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -201,4 +202,5 @@ body{
   align-items: center;
   text-align: center;
   opacity: 0;
+ 
 }

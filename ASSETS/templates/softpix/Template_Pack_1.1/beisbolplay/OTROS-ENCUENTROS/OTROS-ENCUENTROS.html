@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>OTROS-ENCUENTROS</title>
+
+    <script src="../../js/gsap3.2.6.min.js"></script>
+    <script type="text/javascript" src="../../js/spx_interface.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      id="DynamicTheme"
+      href="css/styles.css"
+    />
+
+    <script type="text/javascript">
+      window.SPXGCTemplateDefinition = {
+        description: "bx-score left",
+        playserver: "OVERLAY",
+        playchannel: "1",
+        playlayer: "1",
+        webplayout: "6",
+        out: "manual",
+        dataformat: "json",
+        uicolor: "7",
+        DataFields: [
+          {
+            field: "comment",
+            ftype: "textfield",
+            title: "OTROS-ENCUENTROS",
+            value: "OTROS-ENCUENTROS",
+          },
+
+          {
+          field: "f0",
+          ftype: "textfield",
+          title: "ID DEL JUEGO",
+          value: "23+2+4++3",
+        },
+
+
+      
+        ],
+      };
+    </script>
+  </head>
+
+  <body>
+    <div
+      class="container"
+      id="container"
+
+    >
+
+    <div id="cont-text" class="cont-text"></div>
+
+
+    <div id="cont1" class="cont-1">
+
+        <div id="cont-inning" class="cont-inning">
+           <div class="conte">
+            <div id="inning" class="inning">1</div>
+            <div class="alta_baja"><img width="100%"  id="ALTA-BAJA" ></div>
+           </div>
+        </div>
+
+        <div class="visitante">
+            <div class="logo_equipo">
+                <img id="id_equipo_visitante"  width="100%"  height="200"  alt="">
+            </div>
+            <div id="carreras_visitante" class="carreras"></div>
+
+        </div>
+
+        <div class="homeclub">
+            <div class="logo_equipo">
+                <img id="id_equipo_homeclub" width="100%"  height="200"  alt="">
+            </div>
+            <div id="carreras_homeclub" class="carreras"></div>
+            
+        </div>
+
+    </div>
+
+
+
+    
+      
+
+      <div style="opacity:0;"  id="f0"></div>
+    
+    </div >
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="js/animaciones.js"></script>
+    <script type="text/javascript" src="js/temStyles.js"></script>
+
+  </body>
+</html>
