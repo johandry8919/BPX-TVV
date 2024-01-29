@@ -27,9 +27,1033 @@
       "onair": "false",
       "imported": "1700167363979",
       "relpath": "/softpix/SPX_Scoreboard_1_1_1/SPX_Scoreboard_TVV.html"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "BATEADOR-FULL",
+          "value": "BATEADOR-FULL"
+        },
+        {
+          "field": "f0",
+          "ftype": "textfield",
+          "title": "ID DEL JUEGO",
+          "value": "23+2+4++3"
+        },
+        {
+          "field": "f1",
+          "ftype": "dropdown",
+          "title": "BATEADORES HOMECLUB",
+          "value": "",
+          "items": [
+            {
+              "text": "bateador-N/A",
+              "value": ""
+            },
+            {
+              "text": "bateador-1",
+              "value": "0"
+            },
+            {
+              "text": "bateador-2",
+              "value": "1"
+            },
+            {
+              "text": "bateador-3",
+              "value": "2"
+            },
+            {
+              "text": "bateador-4",
+              "value": "3"
+            },
+            {
+              "text": "bateador-5",
+              "value": "4"
+            },
+            {
+              "text": "bateador-6",
+              "value": "5"
+            },
+            {
+              "text": "bateador-7",
+              "value": "6"
+            },
+            {
+              "text": "bateador-8",
+              "value": "7"
+            },
+            {
+              "text": "bateador-9",
+              "value": "8"
+            }
+          ]
+        },
+        {
+          "field": "f2",
+          "ftype": "dropdown",
+          "title": "BATEADORES VISITANTE",
+          "value": "",
+          "items": [
+            {
+              "text": "bateador-N/A",
+              "value": ""
+            },
+            {
+              "text": "bateador-1",
+              "value": "0"
+            },
+            {
+              "text": "bateador-2",
+              "value": "1"
+            },
+            {
+              "text": "bateador-3",
+              "value": "2"
+            },
+            {
+              "text": "bateador-4",
+              "value": "3"
+            },
+            {
+              "text": "bateador-5",
+              "value": "4"
+            },
+            {
+              "text": "bateador-6",
+              "value": "5"
+            },
+            {
+              "text": "bateador-7",
+              "value": "6"
+            },
+            {
+              "text": "bateador-8",
+              "value": "7"
+            },
+            {
+              "text": "bateador-9",
+              "value": "8"
+            }
+          ]
+        }
+      ],
+      "onair": "false",
+      "imported": "1700664215679",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/BANNER-BATEADORS/BANNER-BATEADOR-FULL.html"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "BANNER-BATEADOR-SHORT-PRIMER-TURNO",
+          "value": "BANNER-BATEADOR-SHORT-PRIMER-TURNO"
+        },
+        {
+          "field": "f4",
+          "ftype": "textfield",
+          "title": "Texto dinamico",
+          "value": "PRIMER TURNO AL BATE"
+        },
+        {
+          "field": "f0",
+          "ftype": "textfield",
+          "title": "ID DEL JUEGO",
+          "value": "23+2+4++3"
+        },
+        {
+          "field": "f3",
+          "ftype": "filelist",
+          "title": "Elija la imagen del patrocinador",
+          "assetfolder": "/media/images/bg/",
+          "extension": "png",
+          "value": "none"
+        },
+        {
+          "field": "f1",
+          "ftype": "dropdown",
+          "title": "BATEADORES HOMECLUB",
+          "value": "",
+          "items": [
+            {
+              "text": "bateador-N/A",
+              "value": ""
+            },
+            {
+              "text": "bateador-1",
+              "value": "0"
+            },
+            {
+              "text": "bateador-2",
+              "value": "1"
+            },
+            {
+              "text": "bateador-3",
+              "value": "2"
+            },
+            {
+              "text": "bateador-4",
+              "value": "3"
+            },
+            {
+              "text": "bateador-5",
+              "value": "4"
+            },
+            {
+              "text": "bateador-6",
+              "value": "5"
+            },
+            {
+              "text": "bateador-7",
+              "value": "6"
+            },
+            {
+              "text": "bateador-8",
+              "value": "7"
+            },
+            {
+              "text": "bateador-9",
+              "value": "8"
+            }
+          ]
+        },
+        {
+          "field": "f2",
+          "ftype": "dropdown",
+          "title": "BATEADORES VISITANTE",
+          "value": "",
+          "items": [
+            {
+              "text": "bateador-N/A",
+              "value": ""
+            },
+            {
+              "text": "bateador-1",
+              "value": "0"
+            },
+            {
+              "text": "bateador-2",
+              "value": "1"
+            },
+            {
+              "text": "bateador-3",
+              "value": "2"
+            },
+            {
+              "text": "bateador-4",
+              "value": "3"
+            },
+            {
+              "text": "bateador-5",
+              "value": "4"
+            },
+            {
+              "text": "bateador-6",
+              "value": "5"
+            },
+            {
+              "text": "bateador-7",
+              "value": "6"
+            },
+            {
+              "text": "bateador-8",
+              "value": "7"
+            },
+            {
+              "text": "bateador-9",
+              "value": "8"
+            }
+          ]
+        }
+      ],
+      "onair": "false",
+      "imported": "1700664215763",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/BANNER-BATEADORS/BANNER-BATEADOR-SHORT-PRIMER-TURNO.html"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "BATEADOR-SHORT-HOY",
+          "value": "BATEADOR-SHORT-HOY"
+        },
+        {
+          "field": "f0",
+          "ftype": "textfield",
+          "title": "ID DEL JUEGO",
+          "value": "23+2+4++3"
+        },
+        {
+          "field": "f1",
+          "ftype": "dropdown",
+          "title": "BATEADORES HOMECLUB",
+          "value": "",
+          "items": [
+            {
+              "text": "bateador-N/A",
+              "value": ""
+            },
+            {
+              "text": "bateador-1",
+              "value": "0"
+            },
+            {
+              "text": "bateador-2",
+              "value": "1"
+            },
+            {
+              "text": "bateador-3",
+              "value": "2"
+            },
+            {
+              "text": "bateador-4",
+              "value": "3"
+            },
+            {
+              "text": "bateador-5",
+              "value": "4"
+            },
+            {
+              "text": "bateador-6",
+              "value": "5"
+            },
+            {
+              "text": "bateador-7",
+              "value": "6"
+            },
+            {
+              "text": "bateador-8",
+              "value": "7"
+            },
+            {
+              "text": "bateador-9",
+              "value": "8"
+            }
+          ]
+        },
+        {
+          "field": "f2",
+          "ftype": "dropdown",
+          "title": "BATEADORES VISITANTE",
+          "value": "",
+          "items": [
+            {
+              "text": "bateador-N/A",
+              "value": ""
+            },
+            {
+              "text": "bateador-1",
+              "value": "0"
+            },
+            {
+              "text": "bateador-2",
+              "value": "1"
+            },
+            {
+              "text": "bateador-3",
+              "value": "2"
+            },
+            {
+              "text": "bateador-4",
+              "value": "3"
+            },
+            {
+              "text": "bateador-5",
+              "value": "4"
+            },
+            {
+              "text": "bateador-6",
+              "value": "5"
+            },
+            {
+              "text": "bateador-7",
+              "value": "6"
+            },
+            {
+              "text": "bateador-8",
+              "value": "7"
+            },
+            {
+              "text": "bateador-9",
+              "value": "8"
+            }
+          ]
+        }
+      ],
+      "onair": "false",
+      "imported": "1700664215800",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/BANNER-BATEADORS/BATEADOR-SHORT-HOY.html"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "ALINEACION OFENSIVA",
+          "value": "ALINEACION OFENSIVA"
+        },
+        {
+          "field": "f0",
+          "ftype": "textfield",
+          "title": "ID DEL JUEGO",
+          "value": "23+2+4++3"
+        },
+        {
+          "field": "f1",
+          "ftype": "textfield",
+          "title": "MANAGER",
+          "value": "MANAGER JOSE MORENO"
+        },
+        {
+          "field": "f7",
+          "ftype": "dropdown",
+          "title": "PERIODO",
+          "value": "",
+          "items": [
+            {
+              "text": "TEMPORADA REGULAR",
+              "value": "TR"
+            },
+            {
+              "text": "ROUND ROBIN",
+              "value": "RR"
+            },
+            {
+              "text": "FINAL",
+              "value": "F"
+            }
+          ]
+        },
+        {
+          "field": "f3",
+          "ftype": "filelist",
+          "title": "Elija la imagen del patrocinador",
+          "assetfolder": "/media/images/bg/",
+          "extension": "png",
+          "value": "none"
+        }
+      ],
+      "onair": "false",
+      "imported": "1704395765433",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/FS - ALINEACION OFENSIVA/ALINEACION OFENSIVA.html"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "BATEADOR-SHORT-TEMPORADA",
+          "value": "BATEADOR-SHORT-TEMPORADA"
+        },
+        {
+          "field": "f0",
+          "ftype": "textfield",
+          "title": "ID DEL JUEGO",
+          "value": "23+2+4++3"
+        },
+        {
+          "field": "f1",
+          "ftype": "dropdown",
+          "title": "BATEADORES HOMECLUB",
+          "value": "",
+          "items": [
+            {
+              "text": "bateador-N/A",
+              "value": ""
+            },
+            {
+              "text": "bateador-1",
+              "value": "0"
+            },
+            {
+              "text": "bateador-2",
+              "value": "1"
+            },
+            {
+              "text": "bateador-3",
+              "value": "2"
+            },
+            {
+              "text": "bateador-4",
+              "value": "3"
+            },
+            {
+              "text": "bateador-5",
+              "value": "4"
+            },
+            {
+              "text": "bateador-6",
+              "value": "5"
+            },
+            {
+              "text": "bateador-7",
+              "value": "6"
+            },
+            {
+              "text": "bateador-8",
+              "value": "7"
+            },
+            {
+              "text": "bateador-9",
+              "value": "8"
+            }
+          ]
+        },
+        {
+          "field": "f2",
+          "ftype": "dropdown",
+          "title": "BATEADORES VISITANTE",
+          "value": "",
+          "items": [
+            {
+              "text": "bateador-N/A",
+              "value": ""
+            },
+            {
+              "text": "bateador-1",
+              "value": "0"
+            },
+            {
+              "text": "bateador-2",
+              "value": "1"
+            },
+            {
+              "text": "bateador-3",
+              "value": "2"
+            },
+            {
+              "text": "bateador-4",
+              "value": "3"
+            },
+            {
+              "text": "bateador-5",
+              "value": "4"
+            },
+            {
+              "text": "bateador-6",
+              "value": "5"
+            },
+            {
+              "text": "bateador-7",
+              "value": "6"
+            },
+            {
+              "text": "bateador-8",
+              "value": "7"
+            },
+            {
+              "text": "bateador-9",
+              "value": "8"
+            }
+          ]
+        },
+        {
+          "field": "f6",
+          "ftype": "dropdown",
+          "title": "TEMPORADA",
+          "value": "2023",
+          "items": [
+            {
+              "text": "2023",
+              "value": "2023"
+            },
+            {
+              "text": "2022",
+              "value": "2022"
+            },
+            {
+              "text": "2021",
+              "value": "2021"
+            },
+            {
+              "text": "2020",
+              "value": "2020"
+            },
+            {
+              "text": "2019",
+              "value": "2019"
+            },
+            {
+              "text": "2018",
+              "value": "2018"
+            }
+          ]
+        },
+        {
+          "field": "f7",
+          "ftype": "dropdown",
+          "title": "PERIODO",
+          "value": "",
+          "items": [
+            {
+              "text": "TEMPORADA REGULAR",
+              "value": "TR"
+            },
+            {
+              "text": "ROUND ROBIN",
+              "value": "RR"
+            },
+            {
+              "text": "FINAL",
+              "value": "F"
+            }
+          ]
+        }
+      ],
+      "onair": "false",
+      "imported": "1704400741308",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/BANNER-BATEADOR-TEMPORADA/BANNER-BATEADOR-TEMPORADA.html"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "BX-LANZADOR-ABRIDOR",
+          "value": "BX-LANZADOR-ABRIDOR"
+        },
+        {
+          "field": "f0",
+          "ftype": "textfield",
+          "title": "ID DEL JUEGO",
+          "value": "23+2+4++3"
+        },
+        {
+          "field": "f1",
+          "ftype": "dropdown",
+          "title": "Lanzador HOMECLUB",
+          "value": "",
+          "items": [
+            {
+              "text": "Lanzador-N/A",
+              "value": ""
+            },
+            {
+              "text": "Lanzador-1",
+              "value": "0"
+            },
+            {
+              "text": "Lanzador-2",
+              "value": "1"
+            },
+            {
+              "text": "Lanzador-3",
+              "value": "2"
+            },
+            {
+              "text": "Lanzador-4",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "field": "f2",
+          "ftype": "dropdown",
+          "title": "Lanzador VISITANTE",
+          "value": "",
+          "items": [
+            {
+              "text": "Lanzador-N/A",
+              "value": ""
+            },
+            {
+              "text": "Lanzador-1",
+              "value": "0"
+            },
+            {
+              "text": "Lanzador-2",
+              "value": "1"
+            },
+            {
+              "text": "Lanzador-3",
+              "value": "2"
+            },
+            {
+              "text": "Lanzador-4",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "field": "f6",
+          "ftype": "dropdown",
+          "title": "TEMPORADA",
+          "value": "2023",
+          "items": [
+            {
+              "text": "2023",
+              "value": "2023"
+            },
+            {
+              "text": "2022",
+              "value": "2022"
+            },
+            {
+              "text": "2021",
+              "value": "2021"
+            },
+            {
+              "text": "2020",
+              "value": "2020"
+            }
+          ]
+        },
+        {
+          "field": "f7",
+          "ftype": "dropdown",
+          "title": "PERIODO",
+          "value": "",
+          "items": [
+            {
+              "text": "TEMPORADA REGULAR",
+              "value": "TR"
+            },
+            {
+              "text": "ROUND ROBIN",
+              "value": "RR"
+            },
+            {
+              "text": "FINAL",
+              "value": "F"
+            }
+          ]
+        },
+        {
+          "field": "f3",
+          "ftype": "filelist",
+          "title": "Elija la imagen del patrocinador",
+          "assetfolder": "/media/images/bg/",
+          "extension": "png",
+          "value": "none"
+        }
+      ],
+      "onair": "false",
+      "imported": "1704550819273",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/BOX-LANZADOR-ABRIDOR/BOX-LANZADOR ABRIDOR.html"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "BX-Lanzadores-Salvados",
+          "value": "BX-Lanzadores-Salvados"
+        },
+        {
+          "field": "f0",
+          "ftype": "textfield",
+          "title": "ID DEL JUEGO",
+          "value": "23+2+4++3"
+        },
+        {
+          "field": "f1",
+          "ftype": "dropdown",
+          "title": "Lanzador HOMECLUB",
+          "value": "",
+          "items": [
+            {
+              "text": "Lanzador-N/A",
+              "value": ""
+            },
+            {
+              "text": "Lanzador-1",
+              "value": "0"
+            },
+            {
+              "text": "Lanzador-2",
+              "value": "1"
+            },
+            {
+              "text": "Lanzador-3",
+              "value": "2"
+            },
+            {
+              "text": "Lanzador-4",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "field": "f2",
+          "ftype": "dropdown",
+          "title": "Lanzador VISITANTE",
+          "value": "",
+          "items": [
+            {
+              "text": "Lanzador-N/A",
+              "value": ""
+            },
+            {
+              "text": "Lanzador-1",
+              "value": "0"
+            },
+            {
+              "text": "Lanzador-2",
+              "value": "1"
+            },
+            {
+              "text": "Lanzador-3",
+              "value": "2"
+            },
+            {
+              "text": "Lanzador-4",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "field": "f6",
+          "ftype": "dropdown",
+          "title": "TEMPORADA",
+          "value": "2023",
+          "items": [
+            {
+              "text": "2023",
+              "value": "2023"
+            },
+            {
+              "text": "2022",
+              "value": "2022"
+            },
+            {
+              "text": "2021",
+              "value": "2021"
+            },
+            {
+              "text": "2020",
+              "value": "2020"
+            }
+          ]
+        },
+        {
+          "field": "f7",
+          "ftype": "dropdown",
+          "title": "PERIODO",
+          "value": "",
+          "items": [
+            {
+              "text": "TEMPORADA REGULAR",
+              "value": "TR"
+            },
+            {
+              "text": "ROUND ROBIN",
+              "value": "RR"
+            },
+            {
+              "text": "FINAL",
+              "value": "F"
+            }
+          ]
+        },
+        {
+          "field": "f3",
+          "ftype": "filelist",
+          "title": "Elija la imagen del patrocinador",
+          "assetfolder": "/media/images/bg/",
+          "extension": "png",
+          "value": "none"
+        }
+      ],
+      "onair": "false",
+      "imported": "1704730498296",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/BOX-Lanzadores-Salvados/BOX-Lanzadores-Salvados.html"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "3",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "BOX-Lanzadores - Hold",
+          "value": "BOX-Lanzadores - Hold"
+        },
+        {
+          "field": "f0",
+          "ftype": "textfield",
+          "title": "ID DEL JUEGO",
+          "value": "23+2+4++3"
+        },
+        {
+          "field": "f1",
+          "ftype": "dropdown",
+          "title": "Lanzador HOMECLUB",
+          "value": "",
+          "items": [
+            {
+              "text": "Lanzador-N/A",
+              "value": ""
+            },
+            {
+              "text": "Lanzador-1",
+              "value": "0"
+            },
+            {
+              "text": "Lanzador-2",
+              "value": "1"
+            },
+            {
+              "text": "Lanzador-3",
+              "value": "2"
+            },
+            {
+              "text": "Lanzador-4",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "field": "f2",
+          "ftype": "dropdown",
+          "title": "Lanzador VISITANTE",
+          "value": "",
+          "items": [
+            {
+              "text": "Lanzador-N/A",
+              "value": ""
+            },
+            {
+              "text": "Lanzador-1",
+              "value": "0"
+            },
+            {
+              "text": "Lanzador-2",
+              "value": "1"
+            },
+            {
+              "text": "Lanzador-3",
+              "value": "2"
+            },
+            {
+              "text": "Lanzador-4",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "field": "f6",
+          "ftype": "dropdown",
+          "title": "TEMPORADA",
+          "value": "2023",
+          "items": [
+            {
+              "text": "2023",
+              "value": "2023"
+            },
+            {
+              "text": "2022",
+              "value": "2022"
+            },
+            {
+              "text": "2021",
+              "value": "2021"
+            },
+            {
+              "text": "2020",
+              "value": "2020"
+            }
+          ]
+        },
+        {
+          "field": "f7",
+          "ftype": "dropdown",
+          "title": "PERIODO",
+          "value": "",
+          "items": [
+            {
+              "text": "TEMPORADA REGULAR",
+              "value": "TR"
+            },
+            {
+              "text": "ROUND ROBIN",
+              "value": "RR"
+            },
+            {
+              "text": "FINAL",
+              "value": "F"
+            }
+          ]
+        },
+        {
+          "field": "f3",
+          "ftype": "filelist",
+          "title": "Elija la imagen del patrocinador",
+          "assetfolder": "/media/images/bg/",
+          "extension": "png",
+          "value": "none"
+        }
+      ],
+      "onair": "false",
+      "imported": "1704731207946",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/BOX-Lanzadores - Hold/BOX-Lanzadores - Hold.html"
     }
   ],
   "warning": "Modifications done in the SPX will overwrite this file.",
   "copyright": "(c) 2020-2023 Softpix (https://spx.graphics)",
-  "updated": "2023-11-16T20:42:43.979Z"
+  "updated": "2024-01-08T16:26:47.947Z"
 }

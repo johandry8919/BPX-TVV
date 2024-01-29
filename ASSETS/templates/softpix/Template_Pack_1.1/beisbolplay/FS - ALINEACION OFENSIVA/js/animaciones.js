@@ -63,35 +63,36 @@ setTimeout(() => {
 
 
 
+  animateInfo("#info0_C", 0.1, 50);
+  animateInfo("#info0_E", 0.1, -50);
+  
   animateInfo("#info1_C", 0.2, 50);
   animateInfo("#info1_E", 0.2, -50);
-  
+
   animateInfo("#info2_C", 0.4, 50);
   animateInfo("#info2_E", 0.4, -50);
 
   animateInfo("#info3_C", 0.6, 50);
   animateInfo("#info3_E", 0.6, -50);
 
+  
   animateInfo("#info4_C", 0.8, 50);
   animateInfo("#info4_E", 0.8, -50);
 
+  animateInfo("#info5_C", 1.0, 50);
+  animateInfo("#info5_E", 1.0, -50);
+
+
+  animateInfo("#info6_C", 1.2, 50);
+  animateInfo("#info6_E", 1.2, -50);
+
+  animateInfo("#info7_C", 1.4, 50);
+  animateInfo("#info7_E", 1.4, -50);
+
+  animateInfo("#info8_C", 1.8, 50);
+  animateInfo("#info8_E", 1.8, -50)
   
-  animateInfo("#info5_C", 0.8, 50);
-  animateInfo("#info5_E", 0.8, -50);
 
-  animateInfo("#info6_C", 1, 50);
-  animateInfo("#info6_E", 1, -50);
-
-  animateInfo("#info7_C", 1.2, 50);
-  animateInfo("#info7_E", 1.2, -50);
-
-  animateInfo("#info8_C", 1.4, 50);
-  animateInfo("#info8_E", 1.4, -50);
-
-  animateInfo("#info9_C", 1.6, 50);
-  animateInfo("#info9_E", 1.6, -50)
-
-  
   // Animaciones para info C Y E
 
 
@@ -100,21 +101,21 @@ setTimeout(() => {
   // Animaciones para info B
 
 
-  animateInfo("#info1_B", 0.2, -50);
-  animateInfo("#info2_B", 0.4, -50);
-  animateInfo("#info3_B", 0.6, -50);
-  animateInfo("#info4_B", 0.8, -50);
-  animateInfo("#info5_B", 0.9, -50);
-  animateInfo("#info6_B", 1, -50);
-  animateInfo("#info7_B", 1.2, -50);
-  animateInfo("#info8_B", 1.4, -50);
-  animateInfo("#info9_B", 1.6, -50);
+  animateInfo("#info0_B", 0.2, -50);
+  animateInfo("#info1_B", 0.4, -50);
+  animateInfo("#info2_B", 0.6, -50);
+  animateInfo("#info3_B", 0.8, -50);
+  animateInfo("#info4_B", 1.0, -50);
+  animateInfo("#info5_B", 1.2, -50);
+  animateInfo("#info6_B", 1.4, -50);
+  animateInfo("#info7_B", 1.8, -50);
+  animateInfo("#info8_B", 1.9, -50);
 
 
   info_button("#info_button", 2, 50);
   animateInfo(".a", 0.2, -50);
 
-}, 2500);
+}, 1500);
 
 
 }
