@@ -116,15 +116,8 @@ const fetchTeamData = async (teamId) => {
                     Id_equipo_homeclub.src = logoRight[id_equipo_homeclub].img_url;
                 
                     const fechaOriginal = fecha;
-
-
                   
                     const fechas = new Date(fechaOriginal);
-
-
-              
-
-
                       
                     const diasSemana = ["lunes", "martes", "miércoles", "jueves", "viernes", "sabado", "domingo"];
                     const meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
