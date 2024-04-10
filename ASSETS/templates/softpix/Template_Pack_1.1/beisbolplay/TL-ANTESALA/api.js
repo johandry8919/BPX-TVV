@@ -9,6 +9,8 @@ function runTemplateUpdate() {
 function ajustarCadena(cadena) {
   cadena = cadena.replace(/\+/g, ' ');
   cadena = cadena.replace(/\+/g, ' ');
+
+  runAnimationIN();
   return cadena;
 }
 
@@ -137,7 +139,7 @@ const fetchTeamData = async (teamId) => {
                     Fecha.innerText = fechaConvertida;
                     Nombre_Estadio.innerHTML = 'ESTADIO' + ' ' + nombre_estadio;
                 
-                    runAnimationIN();
+                   
             
         
         });

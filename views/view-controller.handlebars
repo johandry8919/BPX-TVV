@@ -7,14 +7,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script src="/js/axios.min.js"></script>
-  <script src="/js/fontawesome.all.min.js"></script>
+    <script src="/js/fontawesome.all.min.js"></script>
+      <script src="/js/axios.min.js"></script>
+
   <script src="/js/Sortable.min.js"></script>
   <script src="/js/socket.io.js"></script>
   <script src="/js/vanilla-js-tooltip.js"></script>
   <script src="/js/spx_controllerImportFunctions.js"></script>
   <script src="/js/anime.min.js"></script>
   <script src="/js/lib/vanilla-picker.csp.min.js"></script> <!-- added in 1.1.1 -->
+
   <script>
     var socket = io();
   </script>
@@ -250,6 +252,9 @@
               {{#each filedata.templates}}
 
                 {{#if DataFields}}
+
+
+                <input type="hidden" id="ID_lis" value="form{{@index}}">
 
                   <div id="playlistitem{{@index}}"
                     class              = "itemrow row_accent{{uicolor}}"
@@ -721,7 +726,7 @@
                   justify-content: center; 
                   align-items:center;
                   background: transparent;
-                  color: rgb(54, 54, 54);">Local SPX Renderer<br>DISABLED</div>
+                  color: rgb(55, 55, 54);">Local  Renderer<br>DISABLED</div>
             <iframe
               width={{width}}
               height={{height}} 
@@ -1024,6 +1029,85 @@
 
 
   </script>
+
+      <script>
+        var currentIndex = 0; // Índice actual del elemento en reproducción
+        var playlistItems; // Variable global para almacenar los elementos de la lista
+        var intervalId; // Variable para almacenar el ID del intervalo
+        TargetElement = ''
+        function playNextItem() {
+          previewItem();
+          // Establecer data-spx-onair en false para el elemento anterior
+          var previousIndex = (currentIndex === 0) ? playlistItems.length - 1 : currentIndex - 1;
+          playlistItems[previousIndex].setAttribute('data-spx-onair', 'false');
+
+          // Simular el clic en el elemento actual
+          playlistItems[currentIndex].click();
+
+          // Establecer data-spx-onair en true para el elemento actual
+          playlistItems[currentIndex].setAttribute('data-spx-onair', 'true');
+
+          // Incrementar el índice para apuntar al siguiente elemento
+          currentIndex = (currentIndex + 1) % playlistItems.length;
+      var button = document.getElementById('MasterTOGGLE');
+          // Actualizar el color del botón
+          updateButtonColor();
+        }
+
+        function startPlayback() {
+          // Reproducir el primer elemento de la lista de inmediato
+          playNextItem();
+          
+
+          // Reproducir los elementos restantes de la lista cada 2000 milisegundos (2 segundos)
+          intervalId = setInterval(playNextItem, 5000);
+          
+        }
+
+        function stopPlayback() {
+          // Detener la reproducción cancelando el setInterval
+          clearInterval(intervalId);
+          intervalId = null; // Actualizar intervalId a null para indicar que la reproducción se ha detenido
+          // Actualizar el color del botón
+          updateButtonColor();
+        }
+        function playItem() {
+          // Verificar si se está reproduciendo actualmente
+          if (!intervalId) {
+            // Obtener todos los elementos de la lista
+            playlistItems = document.querySelectorAll('.itemrow');
+
+            // Establecer el atributo data-spx-onair en true para el primer elemento
+            playlistItems[0].setAttribute('data-spx-onair', 'true');
+
+            // Iniciar la reproducción desde el primer elemento
+            currentIndex = 0;
+
+            // Iniciar la reproducción
+            startPlayback();
+          } else {
+            // Detener la reproducción
+            stopPlayback();
+          }
+        }
+
+        function updateButtonColor() {
+          // Cambiar la clase y el texto del botón para indicar el estado de la reproducción
+          var button = document.getElementById('MasterTOGGLE');
+          if (intervalId) {
+            button.classList.remove('bg_green', 'ripple');
+            button.classList.add('btn', 'ripple', 'bg_red');
+            button.innerText = 'Stop';
+          } else {
+            button.classList.remove('bg_red', 'ripple');
+            button.classList.add('btn', 'ripple', 'bg_green');
+            button.innerText = 'Play';
+          }
+        }
+
+      </script> 
+
+
 </body>
 
 </html>

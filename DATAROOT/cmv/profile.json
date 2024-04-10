@@ -1,0 +1,62 @@
+{
+  "templates": [
+    {
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "OTROS-ENCUENTROS",
+          "value": "OTROS-ENCUENTROS"
+        },
+        {
+          "field": "f0",
+          "ftype": "textfield",
+          "title": "ID DEL JUEGO",
+          "value": "23+2+4++3"
+        }
+      ],
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/OTROS-ENCUENTROS/OTROS-ENCUENTROS.html",
+      "description": "bx-score left",
+      "playserver": "-",
+      "playchannel": "1",
+      "playlayer": "1",
+      "dataformat": "json",
+      "webplayout": "6",
+      "out": "manual",
+      "uicolor": "7"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "1",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "lt-antesala",
+          "value": "lt-antesala"
+        },
+        {
+          "field": "f0",
+          "ftype": "textfield",
+          "title": "ID DEL JUEGO",
+          "value": "23+2+4++3"
+        }
+      ],
+      "onair": "false",
+      "imported": "1712755940017",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/TL-ANTESALA/lt-antesala.html"
+    }
+  ],
+  "warning": "Modifications done in the SPX will overwrite this file.",
+  "copyright": "(c) 2020-2023 Softpix (https://spx.graphics)",
+  "updated": "2024-04-10T13:32:20.017Z",
+  "general": {
+    "background": ""
+  }
+}

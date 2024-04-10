@@ -1,0 +1,203 @@
+{
+  "warning": "Modifications done in the SPX will overwrite this file.",
+  "copyright": "(c) 2020-2023 Softpix (https://spx.graphics)",
+  "updated": "2024-04-10T18:08:01.532Z",
+  "templates": [
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "1",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "lt-antesala",
+          "value": "lt-antesala"
+        },
+        {
+          "field": "f0",
+          "ftype": "textfield",
+          "title": "ID DEL JUEGO",
+          "value": "23+2+4++3"
+        }
+      ],
+      "onair": "false",
+      "imported": "1712755940017",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/TL-ANTESALA/lt-antesala.html",
+      "itemID": "1712755947094"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "1",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "lt-antesala",
+          "value": "lt-antesala"
+        },
+        {
+          "field": "f0",
+          "ftype": "textfield",
+          "title": "ID DEL JUEGO",
+          "value": "23+2+4++3"
+        }
+      ],
+      "onair": "false",
+      "imported": "1712755940017",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/TL-ANTESALA/lt-antesala.html",
+      "itemID": "1712772478723"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "1",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "lt-antesala",
+          "value": "lt-antesala"
+        },
+        {
+          "field": "f0",
+          "ftype": "textfield",
+          "title": "ID DEL JUEGO",
+          "value": "23+2+4++3"
+        }
+      ],
+      "onair": "false",
+      "imported": "1712755940017",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/TL-ANTESALA/lt-antesala.html",
+      "itemID": "1712772477732"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "1",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "lt-antesala",
+          "value": "lt-antesala"
+        },
+        {
+          "field": "f0",
+          "ftype": "textfield",
+          "title": "ID DEL JUEGO",
+          "value": "23+2+4++3"
+        }
+      ],
+      "onair": "false",
+      "imported": "1712755940017",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/TL-ANTESALA/lt-antesala.html",
+      "itemID": "1712755997081"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "1",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "lt-antesala",
+          "value": "lt-antesala"
+        },
+        {
+          "field": "f0",
+          "ftype": "textfield",
+          "title": "ID DEL JUEGO",
+          "value": "23+2+4++3"
+        }
+      ],
+      "onair": "false",
+      "imported": "1712755940017",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/TL-ANTESALA/lt-antesala.html",
+      "itemID": "1712755996653"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "1",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "lt-antesala",
+          "value": "lt-antesala"
+        },
+        {
+          "field": "f0",
+          "ftype": "textfield",
+          "title": "ID DEL JUEGO",
+          "value": "23+2+4++3"
+        }
+      ],
+      "onair": "false",
+      "imported": "1712755940017",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/TL-ANTESALA/lt-antesala.html",
+      "itemID": "1712755996239"
+    },
+    {
+      "description": "",
+      "playserver": "OVERLAY",
+      "playchannel": "1",
+      "playlayer": "1",
+      "webplayout": "1",
+      "out": "manual",
+      "dataformat": "json",
+      "uicolor": "1",
+      "DataFields": [
+        {
+          "field": "comment",
+          "ftype": "textfield",
+          "title": "lt-antesala",
+          "value": "lt-antesala"
+        },
+        {
+          "field": "f0",
+          "ftype": "textfield",
+          "title": "ID DEL JUEGO",
+          "value": "23+2+4++3"
+        }
+      ],
+      "onair": "false",
+      "imported": "1712755940017",
+      "relpath": "/softpix/Template_Pack_1.1/beisbolplay/TL-ANTESALA/lt-antesala.html",
+      "itemID": "1712755995508"
+    }
+  ]
+}
